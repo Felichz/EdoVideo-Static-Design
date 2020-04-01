@@ -67,6 +67,7 @@
     text-align: right;
     list-style: none;
     background: black;
+    background: linear-gradient(180deg, black 40%, transparent);
 }
 
 .header__menu:hover ul, .header__menu ul:hover {

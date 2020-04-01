@@ -25,7 +25,7 @@
 }
 
 .carousel__container:hover .carousel-item {
-    opacity: 0.3;
+    opacity: 0.5;
 }
 
 .carousel__container:hover .carousel-item:hover {
