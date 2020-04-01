@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            width: 100vw;
+            height: 100vh;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: #FF7600;
+            text-shadow: 2px 2px 1px #B35200;
+            background: rgb(0,53,64);
+            background: linear-gradient(158deg, rgba(0,53,64,1) 0%, rgba(0,106,128,1) 36%, rgba(0,212,255,1) 100%);
+        }
+
+        .container .item {
+            margin: 0;
+        }
+
+        .container h1.item {
+            font-size: 8vw;
+        }
+
+        .container h2.item {
+            font-size: 4vw;
+        }
+
+        @media (max-width: 800px) {
+            .container h1.item {
+                font-size: 12vw
+            }
+            .container h2.item {
+                font-size: 8vw
+            }
+        }
+    </style>
+</head>
+<body class="container">
+    <h1 class="item">Centrado vertical</h1>
+    <h2 class="item">Usando Flexbox</h2>
+</body>
+</html>

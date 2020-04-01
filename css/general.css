@@ -1,0 +1,17 @@
+@font-face {
+    font-family: RadonDeco;
+    src: url('../fonts/Radon Deco.ttf');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: RadonBold;
+    src: url('../fonts/Radon Bold.otf');
+    font-weight: normal;
+}
+
+body {
+    margin: 0;
+    background-color: black /*#8F57FD*/;
+    font-family: Arial, Helvetica, sans-serif;
+}

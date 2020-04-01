@@ -1,0 +1,95 @@
+Flexbox:
+
+Container -> items (varios)
+
+============ Propiedades del container ============
+
+display: flex;
+    Propiedad del container flex, habilita un contexto flex para todos sus hijos.
+
+flex-direction:
+    (Main axis)
+    Establece la alineación de los items.
+    Se puede establecer una alineación horizontal izquierda derecha, o una vertical, arriba abajo.
+    Los item flex son elementos que se disponen entre sí como una fila o una columna.
+
+    row;            El default, una fila de izquierda a derecha.
+    row-reverse;    Fila derecha a izquierda.
+    column;         Una columna de arriba a abajo.
+    column-reverse; Una columna de abajo a arriba.
+
+flex-wrap:
+    (Cross axis)
+    Por defecto los items se van a ajustar para entrar todos en la misma linea, aunque deban cambiar su tamaño.
+    Esto se puede cambiar permitiendo que los items se dispongan en múltiples lineas.
+
+    nowrap; (Por defecto)
+    wrap;   Multi-linea
+    wrap-reverse: Lineas invertidas
+
+flex-flow: <flex-direction> || <flex-wrap>
+    Shothand de flex-direction y flex-wrap.
+
+justify-content:
+    Define la distribución del espacio libre entre los items. (Dentro del main axis)
+
+    flex-start;     Los items se agrupan al inicio.
+    flex-end;       Se agrupan al final.
+    center;         Se agrupan en el centro.
+    space-between;  Se separan lo máximo posible entre ellos.
+    space-around;   Distribuyen el espacio equitativamente entre ellos,
+                    el primer item se posiciona al comienzo del container y el último item al final.
+    space-evenly;   Distribuyen el espacio equitativamente entre ellos incluyendo los bordes del container.
+
+    Palabras clave adicionales:
+        safe;
+        unsafe;
+
+        El uso seguro garantiza que, independientemente de cómo realice este tipo de posicionamiento,
+        no puede empujar un elemento de modo que se muestre fuera de la pantalla (por ejemplo, desde la parte superior)
+        de tal manera que el contenido no se pueda desplazar tampoco (llamado "data loss" )
+
+align-items:
+    Como justify-content pero para el cross axis (vertical/perpendicular).
+
+    stretch; (default) Elementos se estiran para ajustarse al contenedor (aún respeta width y height).
+    flex-start; Alinea elementos a la parte superior del contenedor.
+    flex-end; Alinea elementos a la parte inferior del contenedor.
+    center; Alinea elementos en el centro (verticalmente hablando) del contenedor.
+    baseline; Muestra elementos en la línea base del contenedor (A la base del texto).
+
+    También se puede agregar safe o unsafe.
+
+align-content:
+    Como las propiedades anteriores pero en lugar de definir la distribución entre items de una linea,
+    esta propiedad define la distribución entre las mismas lineas (cross axis).
+    (Solo funciona en multilinea y cuando hay espacio sobrante)
+
+    flex-start;
+    flex-end;
+    center;
+    stretch;
+    space-between;
+    space-around;
+    space-evenly;
+
+    También se puede agregar safe o unsafe.
+
+============ Propiedades de los items ============
+
+order: <integer>;
+    Establece un orden especifico para un item dentro de su linea, reemplaza su orden por defecto.
+    (el orden por defecto es 0 para todos los items)
+
+align-self:
+    Establece un alineamiento para el item específico que reeemplaza el default
+    que fue definido por align-items
+
+flex-grow: <integer>;
+    Define la capacidad de un item para agrandarse y ocupar espacio de la linea.
+    Default 0, el valor indica la proporción de espacio que puede tomar del container.
+
+    Si todos los item tienen un flex-grow de 1 (100%), todos ocupan espacio equitativamente.
+
+flex-shrink: <integer>;
+    Como grow pero define la capacidad de un item para achicarse.

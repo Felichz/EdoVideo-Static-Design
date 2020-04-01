@@ -1,0 +1,79 @@
+Pasos que sigue el navegador para construir las páginas web:
+
+Procesa el HTML para construir el DOM.
+Procesa el CSS para construir el CSSOM.
+El DOM se une con el CSSOM para crear el Render Tree.
+Se aplican los estilos CSS en el Render Tree.
+Se ““pintan”” los nodos en la pantalla para que los usuarios vean el contenido de la página web.
+
+======================================================
+
+Etiquetas:
+<article> Define contenido independiente
+<section> Secciones de pagina
+<aside> Contenido que no afecta a la pagina ni agrega sentido a su contenido, por ejemplo publicidad
+
+======================================================
+
+Propiedades CSS:
+
+outline: El bordecito que aparece en los elementos focus, como en algunos input
+
+box-sizing: Hace que cuando especifiquemos el width y height, estos incluyan tambien al padding, margin, y border
+
+white-space: Establece como se manejan los espacios en blanco dentro de un elemento
+    normal;
+    nowrap;
+    pre;
+    pre-wrap;
+    pre-line;
+
+
+======================================================
+
+Displays:
+
+Block: Elementos por defecto: <div> <p> <h1> <section> <ul>
+
+Inline: <span> <em> <b>
+
+Inline-block: Es como inline pero respeta el width y height del elemento
+
+None: No oculta los elementos sino que los elimina por completo del DOM
+
+Table: Estos elementos se comportaran como el elemento <table>
+
+Flex: Display de flexbox, util para centrar y alinear elementos, el elemento padre con display flex, alineara 
+los elementos hijos por defecto de izquierda a derecha, suele acompañarse de propiedades como justify-content y align-items
+
+Grid: Despues de flexbox llega el sitema CSS Grid, se implementa con el display grid en el elemento contenedor o padre.
+
+======================================================
+
+Positions:
+
+Una vez establecemos la propiedad position, podemos usar las propiedades top, bottom, right y left.
+
+relative: El elemento se coloca relativo a su posicion normal
+
+absolute: El elemento se ubica en relacion al elemento relativo mas cercano, como que se hace un objeto
+          "independiente" a la caja del padre, como que se "sale" de su modelo de caja
+
+fixed: El elemento se ubica en relacion a la ventana del navegador
+
+sticky: 
+
+static: El valor por defecto, no se ve afectado por top, bottom, right y left
+
+======================================================
+
+Recursos
+
+Version pro y universal de Angular Material: StoryBooks
+
+colorhunt.co
+coolors.co
+iconos8.es
+
+======================================================
+
