@@ -1,10 +1,7 @@
 .carousel {
     padding: 25vh 0 10vh 15px;
     overflow-x: scroll;
-    box-shadow: inset 0px 20px 17px black;
-    background: url('../img/bg.jpeg');
-    background-position: center;
-    background-size: cover;
+    background: transparent;
 }
 
 .carousel__container {
