@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning CSS Grid</title>
+</head>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        background: #080808;
+    }
+
+    .container {
+        display: grid;
+        box-sizing: border-box;
+        height: 500px;
+        padding: 10px;
+
+        grid-template-columns: 1fr 1fr;
+        column-gap: 10px;
+        align-items: center;
+
+        background-color: teal;
+    }
+
+    .box {
+        box-sizing: border-box;
+        height: 100px;
+        padding: 10px;
+        background: black;
+        color: white;
+        text-align: center;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="box">1</div>
+        <div class="box">2</div>
+    </div>
+</body>
+</html>

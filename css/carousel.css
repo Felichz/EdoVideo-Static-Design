@@ -1,8 +1,10 @@
 .carousel {
-    padding: 30px;
-    padding-top: 0;
-    margin-bottom: 50vh;
+    padding: 25vh 0 10vh 15px;
     overflow-x: scroll;
+    box-shadow: inset 0px 20px 17px black;
+    background: url('../img/bg.jpeg');
+    background-position: center;
+    background-size: cover;
 }
 
 .carousel__container {
@@ -13,7 +15,7 @@
 .carousel-item {
     display: inline-block;
     position: relative;
-    overflow: hidden; /* Makes the child elements respect the box, like they are "inside" */
+    overflow: hidden;
     width: 200px;
     height: 250px;
     margin-right: 10px;
@@ -22,6 +24,7 @@
     cursor: pointer;
     transition: 450ms;
     transform-origin: center left;
+    box-shadow: 5px 5px 5px -2px rgba(0,0,0,.5);
 }
 
 .carousel__container:hover .carousel-item {

@@ -30,6 +30,7 @@
 }
 
 .search__input::placeholder {
+    opacity: .9;
     color: white;
     transition: .1s;
 }

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning CSS Grid</title>
+</head>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        background: #444;
+    }
+
+    .container {
+        display: grid;
+        box-sizing: border-box;
+        padding: 10px;
+
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 10px;
+    }
+
+    .box {
+        box-sizing: border-box;
+        padding: 10px;
+        background: black;
+        color: white;
+        text-align: center;
+    }
+
+    .box1 {
+        /* Both are equal in this case */
+        grid-area: 1 / 2 / 6 / -1; /* -1 means the final column */
+        grid-area: 1 / 2 / 6 / 4;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="box box1">1</div>
+        <div class="box box2">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+        <div class="box">6</div>
+        <div class="box">7</div>
+        <div class="box">8</div>
+        <div class="box">9</div>
+        <div class="box">10</div>
+        <div class="box">11</div>
+        <div class="box">12</div>
+        <div class="box">13</div>
+        <div class="box">14</div>
+        <div class="box">15</div>
+    </div>
+</body>
+</html>

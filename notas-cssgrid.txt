@@ -1,0 +1,59 @@
+Container de CSS Grid
+display: grid;
+
+============ Propiedades del container ============
+
+grid-template-columns: <size> <size> <size>...
+    Define los tamaños de las columnas, los valores pueden ser fijos, relativos, y automáticos (auto)
+
+    También se pueden definir tamaños proporcionales entre sí,
+    por ejemplo unas 3 columnas de proporción 1:2:1 se definen:
+    grid-template-columns: 1fr 2fr 1fr;
+
+    repeat:
+        Repite un valor varias veces, por ejemplo:
+        grid-template-columns: 1fr 1fr 1fr;
+        Es igual a...
+        grid-template-columns: repeat(3, 1fr);
+
+grid-template-rows:
+    Define tamaños de filas
+
+grid-auto-rows:
+    Se puede especificar un grupo de tamaños de fila como en grid-template-rows,
+    pero en este caso el patrón se repite infinitamente hacia abajo, en todas las filas.
+
+column-gap:
+    Define espacio entre columnas
+
+row-gap:
+    Define espacio entre filas
+
+grid-gap:
+    Espacio entre filas y columnas simultáneamente
+
+align-items:
+    Alinea los elementos verticalmente dentro de su propia fila.
+
+
+============ Propiedades de las boxes ============
+
+grid-column: <integer> / <integer>;
+    Especifica en que lineas de la grid debe comenzar y terminar la columna del elemento
+
+grid-row: <integer> / <integer>;
+    Lo mismo para las filas
+
+grid-area: <comienzo fila> / <comienzo columna> / <fin fila> / <fin columna>;
+    La combinación de los anteriores
+
+grid-column-start: <integer>;
+grid-column-end: <integer>;
+grid-row-start: <integer>;
+grid-row-end: <integer>;
+    Valores especificos.
+    También se puede usar el valor 'span <integer>' para definir una columna segun
+    la cantidad de espacios que ocupa
+
+order: <int>;
+    Como en flexbox, determina la prioridad del elemento.
