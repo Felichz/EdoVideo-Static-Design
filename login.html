@@ -7,6 +7,7 @@
     <link rel="icon" href="img/favicon.png" type="image/png" />
     <link rel="stylesheet" href="css/general.css">
     <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/login.css">
 </head>
 <body>
     <header class="header">
@@ -27,8 +28,45 @@
         </div>
     </header>
 
-    <section >
-
+    <section class="login">
+        <section class="login__container">
+            <h2>Login</h2>
+            <form class="login__container--form">
+                <input class="input" type="text" placeholder="Email">
+                <input class="input" type="password" placeholder="Password">
+                <button class="button" type="submit">Login</button>
+                <div class="login__container--remember-forgot">
+                    <label>
+                        <input type="checkbox" id="cbxo1">
+                        Remember me
+                    </label>
+                    <a href="#">Forgot your password?</a>
+                </div>
+            </form>
+            <section class="login__container--social-login">
+                <a href="#">
+                    <div>
+                        <img src="./img/google-icon2.png" alt="Google">
+                        Login with Google
+                    </div>
+                </a>
+                <a href="#">
+                    <div>
+                        <img src="./img/twitter-icon2.png" alt="Twitter">
+                        Login with Twitter
+                    </div>
+                </a>
+            </section>
+            <div class="login__container--register">
+                <p>You do not have an account?</p>
+                <a href="">Register for free</a>
+            </div>
+        </section>
     </section>
+    <footer class="footer">
+        <a href="#">Terms and conditions</a>
+        <a href="#">Privacity politic</a>
+        <a href="#">Support center</a>
+    </footer>
 </body>
 </html>

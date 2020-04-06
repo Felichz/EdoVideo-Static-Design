@@ -1,5 +1,5 @@
 .carousel {
-    padding: 25vh 0 10vh 15px;
+    padding: 15vh 0 10vh 15px;
     overflow-x: scroll;
     background: transparent;
 }
@@ -66,6 +66,11 @@
 .carousel-item__details--img {
     width: 32px;
     height: 32px;
+    transition: 250ms;
+}
+
+.carousel-item__details--img:hover {
+    transform: scale(1.2);
 }
 
 .carousel-item__details--title {
