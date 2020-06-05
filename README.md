@@ -1,4 +1,4 @@
-Basado en el curso Fronted Developer de Platzi, este curso forma parte de la [Escuela de Javascript](https://platzi.com/escuela-javascript/ "Escuela de Javascript").
+Based on Platzi Frontend Developer Course, it belongs to their [Javascript School](https://platzi.com/escuela-javascript/ "Escuela de Javascript").
 
 #### Github Page Links
 - [Index](https://felichz.github.io/EdoVideo-Static-Design/ "Index")
