@@ -3,22 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"> 
-    <title>Patol Movies</title>
+    <title>Edo Video</title>
     <link rel="icon" href="img/favicon.png" type="image/png" />
     <link rel="stylesheet" href="css/general.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/footer.css">
 </head>
 <body>
     <header class="header">
-        <h1 class="header__logo">
-            <span style="font-family: RadonDeco;color: white;">P</span>
-            <span style="font-family: RadonBold;color: white;">atol</span>
-        </h1>
-        <!--<img class="header__img" src="img/patol-white.png" alt="Logo">-->
+        <img tabindex="1" class="header__logo" src="img/assets/edo-video-logo.png" alt="Edo Video">
         <div class="header__menu">
             <div class="header__menu--profile">
-                <img class="header__menu--img" src="img/user-icon.png" alt="User">
+                <img class="header__menu--img" src="img/assets/user-icon.png" alt="User">
                 <p>Profile</p>
             </div>
             <ul>
@@ -30,10 +27,10 @@
 
     <section class="login">
         <section class="login__container">
-            <h2>Login</h2>
+            <h2 tabindex="2">Login</h2>
             <form class="login__container--form">
-                <input class="input" type="text" placeholder="Email">
-                <input class="input" type="password" placeholder="Password">
+                <input aria-label="Email" class="input" type="text" placeholder="Email">
+                <input aria-label="Password" class="input" type="password" placeholder="Password">
                 <button class="button" type="submit">Login</button>
                 <div class="login__container--remember-forgot">
                     <label>
@@ -46,13 +43,13 @@
             <section class="login__container--social-login">
                 <a href="#">
                     <div>
-                        <img src="./img/google-icon2.png" alt="Google">
+                        <img src="./img/assets/google-icon2.png" alt="Google">
                         Login with Google
                     </div>
                 </a>
                 <a href="#">
                     <div>
-                        <img src="./img/twitter-icon2.png" alt="Twitter">
+                        <img src="./img/assets/twitter-icon2.png" alt="Twitter">
                         Login with Twitter
                     </div>
                 </a>
